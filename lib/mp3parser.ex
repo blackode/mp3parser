@@ -26,7 +26,7 @@ defmodule Mp3parser do
             <<_::binary-size(mp3_size),tag::binary>> = binary
             tag
           {:error,reason} -> 
-            IO.inspect reason,abel: "Failed in reading the file contents"
+            IO.inspect reason,label: "Failed in reading the file contents"
             System.halt 0
         end
     end
